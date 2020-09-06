@@ -6,12 +6,11 @@ import "./App.scss";
 import About from "../About";
 
 function App() {
-  const [displayComponent, setDisplayComponent] = useState('contact');
+  const [displayComponent, setDisplayComponent] = useState('home');
   const changeContentView = (componentName) => {
     setDisplayComponent(componentName);
   };
   useEffect(() => {
-    console.log(displayComponent, 'hello displayi')
   }, [displayComponent]);
   return (
     <div className="App">
